@@ -2,7 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b34ca8ef-ba96-4618-b041-ca929ffc6b3e" name="Default" comment="">
-      <change beforePath="$PROJECT_DIR$/team1.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/data_functions.py" beforeDir="false" afterPath="$PROJECT_DIR$/data_functions.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/league_builder.py" beforeDir="false" afterPath="$PROJECT_DIR$/league_builder.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,23 +18,26 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="data_functions.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="data_functions.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/data_functions.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1980">
-              <caret line="132" column="61" selection-start-line="129" selection-start-column="12" selection-end-line="132" selection-end-column="61" />
+            <state relative-caret-position="900">
+              <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
               <folding>
                 <element signature="e#47#57#0" expanded="true" />
+                <element signature="e#1062#1647#0" />
+                <element signature="e#1766#2748#0" />
+                <element signature="e#2888#4549#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="league_builder.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="league_builder.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/league_builder.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="39">
-              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            <state relative-caret-position="510">
+              <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
               <folding>
                 <element signature="e#0#10#0" expanded="true" />
               </folding>
@@ -59,8 +63,8 @@
         <option value="$PROJECT_DIR$/team_maker.py" />
         <option value="$PROJECT_DIR$/team_sorter.py" />
         <option value="$PROJECT_DIR$/csv_uploader.py" />
-        <option value="$PROJECT_DIR$/data_functions.py" />
         <option value="$PROJECT_DIR$/league_builder.py" />
+        <option value="$PROJECT_DIR$/data_functions.py" />
       </list>
     </option>
   </component>
@@ -85,7 +89,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -97,6 +100,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -189,6 +193,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="20" y="23" width="1260" height="685" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
@@ -197,10 +202,9 @@
       <window_info anchor="bottom" id="Version Control" order="7" />
       <window_info anchor="bottom" id="Python Console" order="7" />
       <window_info anchor="bottom" id="Terminal" order="7" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15106732" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.15353037" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
       <window_info anchor="right" id="SciView" order="3" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
@@ -211,6 +215,7 @@
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32993197" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,6 +236,32 @@
           <caret line="132" column="61" selection-start-line="129" selection-start-column="12" selection-end-line="132" selection-end-column="61" />
           <folding>
             <element signature="e#47#57#0" expanded="true" />
+            <element signature="e#1062#1647#0" />
+            <element signature="e#1766#2748#0" />
+            <element signature="e#2888#4549#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/league_builder.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="15">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#10#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/data_functions.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1980">
+          <caret line="132" column="61" selection-start-line="129" selection-start-column="12" selection-end-line="132" selection-end-column="61" />
+          <folding>
+            <element signature="e#47#57#0" expanded="true" />
+            <element signature="e#1062#1647#0" />
+            <element signature="e#1766#2748#0" />
+            <element signature="e#2888#4549#0" />
           </folding>
         </state>
       </provider>
@@ -251,6 +282,9 @@
           <caret line="71" column="25" selection-start-line="71" selection-start-column="25" selection-end-line="71" selection-end-column="25" />
           <folding>
             <element signature="e#47#57#0" expanded="true" />
+            <element signature="e#1062#1647#0" />
+            <element signature="e#1766#2748#0" />
+            <element signature="e#2888#4549#0" />
           </folding>
         </state>
       </provider>
@@ -272,31 +306,28 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/team_sorter.py" />
-    <entry file="file://$PROJECT_DIR$/joe_smith.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="49" lean-forward="true" selection-start-line="3" selection-start-column="49" selection-end-line="3" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/joe_smith.txt" />
     <entry file="file://$PROJECT_DIR$/team_sorter.py" />
     <entry file="file://$PROJECT_DIR$/team1.txt" />
-    <entry file="file://$PROJECT_DIR$/data_functions.py">
+    <entry file="file://$PROJECT_DIR$/league_builder.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1980">
-          <caret line="132" column="61" selection-start-line="129" selection-start-column="12" selection-end-line="132" selection-end-column="61" />
+        <state relative-caret-position="510">
+          <caret line="34" column="17" lean-forward="true" selection-start-line="34" selection-start-column="17" selection-end-line="34" selection-end-column="17" />
           <folding>
-            <element signature="e#47#57#0" expanded="true" />
+            <element signature="e#0#10#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/league_builder.py">
+    <entry file="file://$PROJECT_DIR$/data_functions.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="39">
-          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        <state relative-caret-position="900">
+          <caret line="150" lean-forward="true" selection-start-line="150" selection-end-line="150" />
           <folding>
-            <element signature="e#0#10#0" expanded="true" />
+            <element signature="e#47#57#0" expanded="true" />
+            <element signature="e#1062#1647#0" />
+            <element signature="e#1766#2748#0" />
+            <element signature="e#2888#4549#0" />
           </folding>
         </state>
       </provider>

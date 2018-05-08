@@ -136,6 +136,7 @@ def Letters_to_teams_gurdians(raptors, sharks, dragons):
 
 
 if __name__ == "__main__":
+    #this is just test code to see if methods was fully functional, please ignore
     rows = load_csv_file()
     var = team_sorter_experienced(rows)
     var2 = team_sorter(rows)
