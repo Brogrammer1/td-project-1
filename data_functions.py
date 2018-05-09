@@ -10,8 +10,8 @@ import datetime
 # this loads the csv file and then returns it  as a list of dictionares to be assigned to a variable
 def load_csv_file():
     with open('soccer_players.csv', newline='') as csvfile:
-        artreader = csv.DictReader(csvfile)
-        rows = list(artreader)
+        teamreader = csv.DictReader(csvfile)
+        rows = list(teamreader)
     return rows
 
 
@@ -67,12 +67,12 @@ def team_spliter(players_exp, players_no_exp):
 
 # this accepts the three teams and writes them to a text file
 def write_teams_to_text(raptors, sharks, dragons):
-    for r in raptors:
-        r.pop('Height (inches)', None)
-    for r in sharks:
-        r.pop('Height (inches)', None)
-    for r in dragons:
-        r.pop('Height (inches)', None)
+    for member in raptors:
+        member.pop('Height (inches)', None)
+    for member in sharks:
+        member.pop('Height (inches)', None)
+    for member in dragons:
+        member.pop('Height (inches)', None)
     with open('teams.txt', 'w') as txtfile:
         fieldnames = raptors[0].keys()
         team_name_writer = csv.writer(txtfile)
@@ -83,56 +83,44 @@ def write_teams_to_text(raptors, sharks, dragons):
         team_name_writer.writerow([])
         teamwriter.writeheader()
 
-        for p in raptors:
-            teamwriter.writerow(p)
+        for member in raptors:
+            teamwriter.writerow(member)
 
         team_name_writer.writerow([])
         team_name_writer.writerow(["SHARKS"])
         team_name_writer.writerow([])
         teamwriter.writeheader()
 
-        for p in sharks:
-            teamwriter.writerow(p)
+        for member in sharks:
+            teamwriter.writerow(member)
 
         team_name_writer.writerow([])
         team_name_writer.writerow(["DRAGONS"])
         team_name_writer.writerow([])
         teamwriter.writeheader()
 
-        for p in dragons:
-            teamwriter.writerow(p)
+        for member in dragons:
+            teamwriter.writerow(member)
 
-# this accepts the list of 3 teams and generates letters to their guardidans
-def Letters_to_teams_gurdians(raptors, sharks, dragons):
+
+#this writes the letters to the players guardians
+
+def write_letter_to_csv(team,team_name):
     date = datetime.datetime.now()
     trainingdate = date.date() + datetime.timedelta(days=14)
     trainingtime = "2.pm"
 
-    for m in raptors:
-        templist = m["Name"].split(" ")
+    for member in team:
+        templist = member["Name"].split(" ")
         with open("{}_{}.txt".format(templist[0].lower(), templist[1].lower()), "w+") as letter:
-            letter.write("Dear {},\n\nWe are happy to announce that your child {} has been drafted to the RAPTORS.\n"
-                         .format(m['Guardian Name(s)'], m['Name']))
+            letter.write("Dear {},\n\nWe are happy to announce that your child {} has been drafted to the {}.\n"
+                         .format(member['Guardian Name(s)'], member['Name'], team_name))
             letter.write("We will have out first practice at Syon Park on {} at {}\n\nRegards"
                          .format(trainingdate, trainingtime))
 
-    for m in sharks:
-        templist = m["Name"].split(" ")
-        with open("{}_{}.txt".format(templist[0].lower(), templist[1].lower()), "w+") as letter:
-            letter.write("Dear {},\n\nWe are happy to announce that your child {} has been drafted to the SHARKS.\n"
-                         .format(m['Guardian Name(s)'], m['Name']))
-            letter.write("We will have out first practice at Syon Park on {} at {}\n\nRegards"
-                         .format(trainingdate, trainingtime))
+    print("letters have been generated for the {}".format(team_name))
 
-    for m in dragons:
-        templist = m["Name"].split(" ")
-        with open("{}_{}.txt".format(templist[0].lower(), templist[1].lower()), "w+") as letter:
-            letter.write("Dear {},\n\nWe are happy to announce that your child {} has been drafted to the DRAGONS.\n"
-                         .format(m['Guardian Name(s)'], m['Name']))
-            letter.write("We will have out first practice at Syon Park on {} at {}\n\nRegards"
-                         .format(trainingdate, trainingtime))
 
-    print("letters have been made")
 
 
 if __name__ == "__main__":
@@ -178,5 +166,3 @@ if __name__ == "__main__":
 
 
 
-
-    Letters_to_teams_gurdians(raptor, sharks, dragons)
