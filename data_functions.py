@@ -17,22 +17,22 @@ def load_csv_file():
 
 # this accepts the list loaded from the csv file and returns a list of only the experieced players
 def team_sorter_experienced(players):
-    tmpList = []
+    tmp_list = []
     for player in players:
         if player['Soccer Experience'] == 'YES':
-            tmpList.append(player)
+            tmp_list.append(player)
 
-    return tmpList
+    return tmp_list
 
 
 # this accepts the list loaded from the csv file and returns a list of only the non-experieced players
 def team_sorter(players):
-    tmpList = []
+    tmp_list = []
     for player in players:
         if player['Soccer Experience'] == 'NO':
-            tmpList.append(player)
+            tmp_list.append(player)
 
-    return tmpList
+    return tmp_list
 
 
 # this accepts the lists of experiecned and non expereiced and divides them across 3 teams
@@ -119,8 +119,6 @@ def write_letter_to_csv(team,team_name):
                          .format(trainingdate, trainingtime))
 
     print("letters have been generated for the {}".format(team_name))
-
-
 
 
 if __name__ == "__main__":
